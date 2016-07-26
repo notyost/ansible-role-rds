@@ -2,6 +2,7 @@
 # defaults file for ansible-role-rds
 relaunch: False
 date: "{{ ansible_date_time.year }}-{{ ansible_date_time.month }}-{{ ansible_date_time.day }}-{{ ansible_date_time.hour }}-{{ ansible_date_time.minute }}"
+rds_multi_zone: yes
 rds_publicly_accessible: no
 rds_snapshot_name: "snapshot-{{ rds_instance_name }}-{{ date }}"
 rds_instance_name: ""
@@ -21,5 +22,4 @@ rds_iops: ""
 rds_maint_window: ""
 rds_backup_window: ""
 rds_backup_retention: ""
-rds_zone: []
 rds_tags: {}
