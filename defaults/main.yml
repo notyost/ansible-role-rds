@@ -18,7 +18,6 @@ rds_db_name: ""
 rds_username: ""
 rds_password: ""
 rds_security_groups: []
-rds_iops: ""
 rds_maint_window: ""
 rds_backup_window: ""
 rds_backup_retention: ""

@@ -16,7 +16,7 @@
     username: "{{ rds_username }}"
     password: "{{ rds_password }}"
     vpc_security_groups: "{{ rds_security_groups }}"
-    iops: "{{ rds_iops }}"
+    iops: "{{ rds_iops|default(omit) }}"
     maint_window: "{{ rds_maint_window }}"
     backup_window: "{{ rds_backup_window }}"
     backup_retention: "{{ rds_backup_retention }}"
